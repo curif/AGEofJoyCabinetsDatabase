@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html><head>
+			
+		<title>Short guide to make cabinets</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta charset="UTF-8">
+
+		<link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+		<script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+		<script src="https://pixijs.download/v7.2.4/pixi.js"></script>
+		
+
+			<link rel="stylesheet" href="../styles/obsidian-styles.css">
+			<link rel="stylesheet" href="../styles/plugin-styles.css">
+			<link rel="stylesheet" href="../styles/theme.css">
+			<link rel="stylesheet" href="../styles/snippets.css">
+
+			<style>  </style>
+			<style>  </style>
+
+			
+		<script id="relative-paths">
+			let rootPath = "..";
+			let mediaPath = "../media";
+			let jsPath = "../scripts";
+			let cssPath = "../styles";
+		</script>
+		
+			<!-- Graph View Data -->
+			<script>
+			let nodes=
+{"nodeCount":108,"linkCount":50,"radii":[7,7,7,6.4375,6.4375,6.081597222222221,6.081597222222221,5.638888888888889,5.638888888888889,5.638888888888889,5.109375,5.109375,5.109375,5.109375,4.493055555555555,4.493055555555555,4.493055555555555,4.493055555555555,4.493055555555555,4.493055555555555,4.493055555555555,4.493055555555555,4.493055555555555,3.7899305555555554,3.7899305555555554,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"labels":["Controller configuration","Documentation","Index","AEJ FAQ","CDL the Cabinet Description Language","Short guide to make cabinets","How to get and deploy cabinets assets","Testing cabinets assets","MAME","ROM","Quest controller controls","YAML","Sidequest","Game configuration using files","Default controllers configuration mapping","Gamepad controller controls","MAME controller standard table","CRTs - screens","Discord server","Quest Controllers","Cabinet Database (alphabetical)","Cabinet Database by year","Cabinet Database by Artist","Unity","Controllers","Pack","Data East Classics","Elleby cabinet pack 01","Taito classics Vol 1","Taito Classics Vol 2","Hollywood","Cabinet Pack 03","Comic Book Heroes","Cabinet pack 05 - Metal slug","Cabinet Pack 01","Cabinet Pack 04","Cabinet Pack 02","zookeep","xmen2p","xevious","wwfsstar","willow","vanguard","unsquad","tron","tmnt2po","timeplt","suprmrio","superman","strider","stargate","starforc","sdungeon","robocop","ringking","rastan","rambo3","radarscp","qix","popeye","peterpak","pacman","mspacman","mslugx","mslug4","mslug3","mslug2","mslug","mpatrol","mk","mario","marble","maglord","lbowling","kungfum","kangaroo","junofrst","jungleh","joust","indytemp","hbarrel","gng","ghouls","galaxian","galaga","gaiden","frogger","fixitfelix","ffight","excitebk","elevator","drmario","dlair","dkong","dkongjr","dkong3","digdug","defender","commando","cninja","alpine","centiped","cclimber","bublbobl","batman","baddudes","arkanoid","1942"],"paths":["documents/controller-configuration.html","documents/documentation.html","index.html","documents/aej-faq.html","documents/cdl-the-cabinet-description-language.html","documents/short-guide-to-make-cabinets.html","documents/how-to-get-and-deploy-cabinets-assets.html","documents/testing-cabinets-assets.html","documents/mame.html","documents/rom.html","documents/quest-controller-controls.html","documents/yaml.html","documents/sidequest.html","documents/game-configuration-using-files.html","documents/default-controllers-configuration-mapping.html","documents/gamepad-controller-controls.html","documents/mame-controller-standard-table.html","documents/crts---screens.html","documents/discord-server.html","documents/quest-controllers.html","cabinet-database-(alphabetical).html","cabinet-database-by-year.html","cabinet-database-by-artist.html","documents/unity.html","documents/controllers.html","templater/pack.html","packs/data-east-classics.html","packs/elleby-cabinet-pack-01.html","packs/taito-classics-vol-1.html","packs/taito-classics-vol-2.html","packs/hollywood.html","packs/cabinet-pack-03.html","packs/comic-book-heroes.html","packs/cabinet-pack-05---metal-slug.html","packs/cabinet-pack-01.html","packs/cabinet-pack-04.html","packs/cabinet-pack-02.html","age-database/zookeep.html","age-database/xmen2p.html","age-database/xevious.html","age-database/wwfsstar.html","age-database/willow.html","age-database/vanguard.html","age-database/unsquad.html","age-database/tron.html","age-database/tmnt2po.html","age-database/timeplt.html","age-database/suprmrio.html","age-database/superman.html","age-database/strider.html","age-database/stargate.html","age-database/starforc.html","age-database/sdungeon.html","age-database/robocop.html","age-database/ringking.html","age-database/rastan.html","age-database/rambo3.html","age-database/radarscp.html","age-database/qix.html","age-database/popeye.html","age-database/peterpak.html","age-database/pacman.html","age-database/mspacman.html","age-database/mslugx.html","age-database/mslug4.html","age-database/mslug3.html","age-database/mslug2.html","age-database/mslug.html","age-database/mpatrol.html","age-database/mk.html","age-database/mario.html","age-database/marble.html","age-database/maglord.html","age-database/lbowling.html","age-database/kungfum.html","age-database/kangaroo.html","age-database/junofrst.html","age-database/jungleh.html","age-database/joust.html","age-database/indytemp.html","age-database/hbarrel.html","age-database/gng.html","age-database/ghouls.html","age-database/galaxian.html","age-database/galaga.html","age-database/gaiden.html","age-database/frogger.html","age-database/fixitfelix.html","age-database/ffight.html","age-database/excitebk.html","age-database/elevator.html","age-database/drmario.html","age-database/dlair.html","age-database/dkong.html","age-database/dkongjr.html","age-database/dkong3.html","age-database/digdug.html","age-database/defender.html","age-database/commando.html","age-database/cninja.html","age-database/alpine.html","age-database/centiped.html","age-database/cclimber.html","age-database/bublbobl.html","age-database/batman.html","age-database/baddudes.html","age-database/arkanoid.html","age-database/1942.html"],"linkSources":[20,22,21,2,2,2,2,2,2,2,2,2,4,4,3,3,3,3,3,6,13,5,5,19,1,1,1,1,1,1,1,1,1,9,0,0,0,0,0,0,0,0,0,17,16,10,7,7,7,15],"linkTargets":[2,2,2,1,6,5,20,21,22,9,8,18,11,0,12,13,9,6,5,12,11,4,7,9,3,6,19,5,4,13,0,17,2,8,24,8,11,4,10,15,16,14,23,4,8,10,18,12,6,14]};
+			let attractionForce = 1;
+			let linkLength = 10;
+			let repulsionForce = 150;
+			let centralForce = 3;
+			let edgePruning = 100;
+			</script>
+			
+<script type="module" src="../scripts/graph_view.js"></script>
+
+<script src="../scripts/graph_wasm.js"></script>
+
+<script src="../scripts/tinycolor.js"></script>
+
+<script src="../scripts/webpage.js"></script>
+
+			</head><body class="theme-dark mod-linux is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;"><div class="flex-container"><div id="sidebar" class="sidebar-left"><div class="sidebar-content"><div><label class="theme-toggle" for="theme_toggle"><input class="toggle__input" type="checkbox" id="theme_toggle"><div class="toggle__fill"></div></label></div></div></div><div class="center-content"><div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;"><div><h1 id="Short_guide_to_make_cabinets"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Short guide to make cabinets</h1></div><div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;"><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="mod-header"></div><div><h3 data-heading="How the cabinet building system works" id="How_the_cabinet_building_system_works"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>How the cabinet building system works</h3></div><div><p><strong>Warning</strong>: tech talk. Read this if you want to create your own cabinets, if not, just download the cabinets assets packs.</p></div><div><p>Cabinets have two parts:</p></div><div><ul class="has-list-bullet">
+<li data-line="0"><div class="list-bullet"></div><strong>Cabinet Model</strong>: Consider a piece of wood furniture that is unpainted and has the shape and components of an arcade cabinet.</li>
+<li data-line="1"><div class="list-bullet"></div><strong>Cabinet assets</strong>: is a zip file that contains the side art stickers, bezels, marquees, and so on, as well as a description file that describes how to paint, how to place the stickers, marquee color light, tv (crt) position, the video to play on the screen when nobody is playing, etc.</li>
+</ul></div><div><p>The <strong>models</strong> of the cabinets, such as Galaga and Xevious, are included in the game, developed by an graphic artist, in a way that its design allows you to <em>reskin</em> them. New versions of the game should include new models.</p></div><div><p><span alt="Cabinet Assets.png" src="Cabinet Assets.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Cabinet Assets.png" src="app://cddc40c97dc206c25ebfa52295dcb42df4f0/home/curif/obsidian/AGEOfJoy-Database/Documents/Cabinet%20Assets.png?1685308218148"></span></p></div><div><p>Without any special knowledge, it is possible to reuse a cabinet model, personalize it, zip the files, and copy it to the headset. Because all cabinets are made in this manner, the game does not include any cabinets assets bundled on it; however, you can create your own or download them starting with a base design. In fact, you can use a "galaga" design and change the side art, bezel, marquee, and so on. And then make a new one.</p></div><div><p>Obviously, you can download all the cabinets that you want because their are distributed as <em>game assets</em></p></div><div><blockquote>
+<p>Note: You don’t need to be a programmer or a graphics designer to make new cabinets assets starting of a base model.</p>
+</blockquote></div><div><h3 data-heading="Creating new cabinets" id="Creating_new_cabinets"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Creating new cabinets</h3></div><div><p>Creating new cabinets is a trial-and-error process. There is a special room in the game called the <em>Workshop</em> where you can test your own cabinets. </p></div><div><p>You can upload the cabinet you're working on as many times as you want to the workshop. When you are satisfied with the outcome, you can place the cabinet in the game. The cabinet will be automatically installed in a room by the game.</p></div><div><p><span alt="Workshop.png" src="Workshop.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Workshop.png" src="app://cddc40c97dc206c25ebfa52295dcb42df4f0/home/curif/obsidian/AGEOfJoy-Database/Documents/Workshop.png?1685309702580"></span><br>
+The best way to make a new cabinet asset for a game is to copy an existing one, decompressing <code>galaga.zip</code> for example, and replace each file for the one that correspond to the game. It's important to use the same characteristic for each file, for example the width and eight for the side art graphics and the same rotation.</p></div><div><p>The special file <code>description.yaml</code> describes the parts of the cabinet.</p></div><div><p>Detailed instructions at the end of this post.</p></div><div><h3 data-heading="The Cabinet Description Language" id="The_Cabinet_Description_Language"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>The Cabinet Description Language</h3></div><div><p>This is an example of the Cabinet Description Language (CDL) in the <code>description.yaml</code> in <code>galaxian.zip</code>, a text file describing a cabinet in a computer language known as <code>YAML</code> (this is the simplest way to communicate with a computer system). </p></div><div><pre><code>name: galaxian
+rom: galaxian.zip
+crt:
+  type: 19i
+  orientation: vertical
+  screen:
+    damage: low
+    invertx: false
+    inverty: true
+style: galaga
+material: black
+year: 1979
+coinslot: coin-slot-double
+timetoload: 5
+video:
+  file: video.mkv
+parts:
+  - name: left
+    art: 
+      file: left.png
+  - name: right
+    art: 
+      file: right.png
+  - name: joystick
+    art: 
+      file: joystick.png
+      inverty: true
+  - name: joystick-down
+    art: 
+      file: joystick-down.png
+  - name: front
+    art: 
+      file: front.png
+  - name: bezel
+    type: bezel
+    art:
+      file: bezel.png
+  - name: marquee
+    type: marquee
+    art:
+      file: marquee.png
+    color:
+      r: 238
+      g: 232
+      b: 176
+      intensity: -2
+</code><button class="copy-code-button">Copy</button></pre></div><div><p>You can use <code>CDL</code> to describe all of the design details of each part of a cabinet model simply by using a text editor on your computer. </p></div><div><p>Once you understand the language, it's easy to develop new cabinets: <a data-href="CDL the Cabinet Description Language" href="../documents/cdl-the-cabinet-description-language.html" class="internal-link" target="_self" rel="noopener">CDL the Cabinet Description Language</a></p></div><div><h2 data-heading="Testing cabinets assets" id="Testing_cabinets_assets"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Testing cabinets assets</h2></div><div><p>Once your cabinet is complete, you can begin testing it. Normally, it should not work; some adjustments may be required, this happens a lot.</p></div><div><p>Read <a data-href="Testing cabinets assets" href="../documents/testing-cabinets-assets.html" class="internal-link" target="_self" rel="noopener">Testing cabinets assets</a> to continue.</p></div><div class="mod-footer"></div></div></div></div><div id="sidebar" class="sidebar-right"><div class="sidebar-content"><h6 style="margin: 1em 1em 1em 12px;">Interactive Graph</h6><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" width="512px" height="512px"></canvas>
+		</div>
+		</div><div class="outline-container" data-size="0"><div class="outline-header"><h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div><div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Short_guide_to_make_cabinets"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="outline-item-title">Short guide to make cabinets</span></a><div class="outline-item-children"><div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#How_the_cabinet_building_system_works"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="outline-item-title">How the cabinet building system works</span></a><div class="outline-item-children"></div></div><div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Creating_new_cabinets"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="outline-item-title">Creating new cabinets</span></a><div class="outline-item-children"></div></div><div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#The_Cabinet_Description_Language"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="outline-item-title">The Cabinet Description Language</span></a><div class="outline-item-children"></div></div><div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Testing_cabinets_assets"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="outline-item-title">Testing cabinets assets</span></a><div class="outline-item-children"></div></div></div></div></div></div></div></div></body></html>
